@@ -1,0 +1,525 @@
+* {
+    text-decoration: none !important;
+}
+.animated-message {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 128, 0, 0.3);
+    background-color: #d4edda;
+    color: #155724;
+    transition: all 0.5s ease-in-out;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.animated-error {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+    background-color: #f8d7da;
+    color: #721c24;
+    transition: all 0.5s ease-in-out;
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    75% {
+        transform: translateX(-5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+.btn-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.unified-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: 900;
+    border-radius: 45px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cart-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.cart-btn:hover {
+    background-color: #218838;
+}
+
+.edit-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: transparent;
+    color: #007bff;
+}
+
+.remove-btn {
+    background-color: transparent;
+    color: red;
+    border: 2px solid red;
+}
+
+.remove-btn:hover {
+    background-color: red;
+    color: white;
+}
+
+.product-image img,
+.product-image .img {
+    min-height: 250px !important ;
+    max-height: 250px !important ;
+}
+
+.form-group {
+    position: relative;
+}
+
+.group2 label {
+    position: absolute;
+    bottom: 36px;
+    background: white;
+}
+
+.group3 label {
+    position: absolute;
+    bottom: 50px;
+    background: white;
+}
+
+.Select label {
+    position: absolute;
+    bottom: 50px;
+    background: white;
+}
+
+.group4 label {
+    position: absolute;
+    top: -9px;
+    background: white;
+}
+
+.pagination-wrap ul {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding: 0;
+    list-style: none;
+}
+
+.pagination-wrap ul li a {
+    display: inline-block;
+    color: #000000;
+    font-weight: 900;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pagination-wrap ul li a:hover {
+    background-color: #f28123;
+    color: #fff;
+}
+
+.page-item.active .page-link {
+    background-color: #f28123;
+    color: #fff;
+    border: 2px solid #0519221a;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 22px;
+}
+
+.admin-menu {
+    position: relative;
+}
+.admin-menu .adminA:hover {
+    color: #f28123;
+}
+
+.admin-submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #051922;
+    padding: 10px 0;
+    min-width: 160px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.admin-submenu a {
+    display: block;
+    padding: 8px 16px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.admin-submenu a:hover {
+    background-color: #f28123;
+    color: #051922;
+}
+
+.admin-menu:hover .admin-submenu {
+    display: block;
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background-color: #fff;
+    color: #051922;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.custom-table thead {
+    background-color: #f28123;
+    color: white;
+    font-weight: bold;
+}
+
+.custom-table th,
+.custom-table td {
+    padding: 14px 18px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.custom-table tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+.custom-table tbody tr:hover {
+    background-color: #f28023af;
+    color: #fff;
+}
+
+.editCart-btn {
+    background-color: #051922;
+    color: white;
+    padding: 6px 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 2px;
+    transition: all 0.3s ease;
+
+}
+
+.editCart-btn:hover {
+    background-color: transparent;
+    color: white;
+    border: #051922 1px solid;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    background-color: #051922 !important;
+    color: #f28123 !important;
+    border-radius: 4px;
+    margin: 0 2px;
+    padding: 6px 12px;
+    border: none;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background-color: #e0701f !important;
+    color: #fff !important;
+}
+
+.dataTables_wrapper .dataTables_filter input,
+.dataTables_wrapper .dataTables_length select {
+    border: 1px solid #f28123;
+    border-radius: 4px;
+    padding: 6px;
+    margin-left: 8px;
+}
+
+div.dt-container .dt-input {
+    background-color: #051922 !important;
+    border: 0.5px solid rgba(255, 255, 255, 0.284) !important;
+}
+.dt-info {
+    color: #051922 !important ;
+}
+.delete-btn {
+    background-color: #e53935;
+    color: #fff;
+    border: none;
+    padding: 5px 6px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: 0.25s;
+    display: inline-block;
+}
+
+.delete-btn:hover {
+    background-color: #721c24;
+    color: white;
+    transform: scale(1.05);
+}
+
+.delete-btn:active {
+    background-color: #b71c1c;
+    transform: scale(0.97);
+}
+
+.login-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    padding: 80px 60px;
+    width: 100%;
+    max-width: 700px;
+    color: #051922;
+}
+
+.login-card h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    color: #f28123;
+}
+
+.form-label {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.form-control {
+    font-size: 1.3rem;
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+}
+
+.form-check-label {
+    font-size: 1.2rem;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 16px;
+    font-size: 1.4rem;
+    border-radius: 12px;
+    font-weight: bold;
+    background: #f28123;
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+a {
+    color: #f28123;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.add-btn {
+    display: inline-block;
+    padding: 7px 11px;
+    background-color: #f28123;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-left: 2px;
+    transition: all 0.3s ease;
+}
+
+.add-btn:hover {
+    background-color: #051922; /* لون عند الـ hover */
+    color: #f28123; /* النص يتغير */
+}
+
+.product-image-link img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #f28123;
+}
+
+.product-image-link:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.BtnAddButton {
+    font-family: "Poppins", sans-serif;
+    display: inline-block;
+    background-color: #f28123;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease,
+        box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.BtnAddButton i {
+    margin-right: 8px;
+}
+
+.BtnAddButton:hover {
+    background-color: black; /* لون أغمق عند التحويم */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    color: white;
+}
+.OrderFinished {
+    background: #f28123;
+    border: none;
+    padding: 13px;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    float: right;
+}
+.CartInOrderFinished {
+    background: #f28123;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    display: block; /* يخلي العنصر block */
+    width: max-content;
+    margin: 20px auto; /* يخليه في النص أفقياً */
+    text-align: center; /* النص في النص */
+}
+
+.OrderFinished:hover,
+.CartInOrderFinished:hover {
+    background-color: #f28123; /* لون الخلفية */
+    color: white; /* لون النص */
+    padding: 15px; /* مسافة داخلية */
+    border-radius: 8px; /* زوايا مستديرة */
+    border: none; /* بدون حدود */
+    cursor: pointer; /* شكل الماوس */
+    transition: all 0.3s ease; /* حركة ناعمة */
+}
+
+.no-note {
+    color: #666; /* لون رمادي */
+    font-style: italic; /* خط مائل */
+    background: #f9f9f9; /* خلفية فاتحة */
+    border: 1px dashed #ccc; /* إطار متقطع */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center; /* النص في المنتصف */
+}
+
+.locale-select {
+    padding: 6px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* عند المرور بالماوس */
+.locale-select:hover {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+}
+
+/* عند التركيز */
+.locale-select:focus {
+    outline: none;
+    border-color: #28a745;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.4);
+}
+.locale-select option {
+    color: black; /* لون النص */
+    font-weight: bold; /* يخلي النص غامق */
+}
+
+.top-header-area.rtl {
+    direction: rtl;
+    text-align: right;
+}
+
+.top-header-area.ltr {
+    direction: ltr;
+    text-align: left;
+}
+.form-control:not(textarea) {
+    height: 57px !important;
+}
